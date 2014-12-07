@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-    <body>
-
+  <body>
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+    <div class="container-fluid main">
+      <div class="row">
+        {% include nav.html %}
+        <div class="pages col-xs-9">
+          <div class="col-xs-10" style="height:95%">
+            <div class="well page active" style="min-height:100%">
+              {{ content }}
+              <!--
+              <hr/>
+              {{ content }}
+              <hr/>
+              {{ content }}
+              <hr/>
+              {{ content }}
+              <hr/>
+              {{ content }}
+              <hr/>
+              {{ content }}
+              <hr/>
+              {{ content }}
+              <hr/>
+              {{ content }}
+              -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     {% include footer.html %}
 
-    </body>
+  </body>
 </html>

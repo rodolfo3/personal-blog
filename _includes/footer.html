@@ -7,3 +7,16 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- material-ui -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.0/js/material.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.0/js/ripples.min.js"></script>
+
+<script>
+  $.material.init();
+
+  $(window).on("resize", function() {
+      $("html, body").height($(window).height());
+      $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight());
+      $(".pages").height($(window).height());
+    }).trigger("resize");
+</script>
