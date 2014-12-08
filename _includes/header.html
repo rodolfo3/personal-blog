@@ -10,6 +10,11 @@
       <a class="navbar-brand" href="{{ site.rooturl }}">
         {{ site.title }}
       </a>
+      {% if page and page.title %}
+        <span class="navbar-brand hidden-xs">
+          &gt; {{ page.title }}
+        </span>
+      {% endif %}
     </div>
     <ul class="nav navbar-nav navbar-right navbar-collapse">
       <li class="hidden-md hidden-sx hidden-lg">
