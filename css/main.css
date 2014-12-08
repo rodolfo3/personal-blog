@@ -95,3 +95,22 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/* COLORS */
+header {
+    background-color: #3f51b5;
+    color: white;
+}
+
+header a, header a:hover, header a:visited {
+    color: white;
+    background-color: transparent !important;
+}
+
+header .icon-bar {
+    background-color: white;
+}
+
+header .navbar-toggle {
+    float: left;
+}
