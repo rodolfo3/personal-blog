@@ -11,7 +11,7 @@ email: blog@rodolfo.pro.br
 github_issue: https://github.com/rodolfo3/blog/issues/new
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
 
-pygments: true
+highlighter: pygments

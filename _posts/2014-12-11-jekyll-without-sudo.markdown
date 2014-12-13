@@ -11,20 +11,20 @@ Trying to install jekyll on Debian using gems (since it's not available using ap
 
 A simple solution is use environment vars and install it in $HOME directory.
 
-{% highlight bash %}
+``` bash
 $ export GEM_HOME="$HOME/.gems"
 $ gem install jekyll
-{% endhighlight %}
+```
 
 If you get some errors, you may are using other jekyll (from outsige ".gems"). Set your `$PATH` too:
 
-{% highlight bash %}
+``` bash
 $ export PATH="$GEM_HOME/bin:$PATH"
-{% endhighlight %}
+```
 
 And that's it!
 
-{% highlight bash %}
+``` bash
 $ jekyll new .
 $ jekyll serve --watch
-{% endhighlight %}
+```
