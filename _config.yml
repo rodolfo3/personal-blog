@@ -3,6 +3,7 @@ title: Rodolfo's blog
 email: rodolfo.3@gmail.com
 description: "Random experiments..."
 baseurl: ""
+staticurl: "/static"
 rooturl: "/"
 url: "http://blog.rodolfo.pro.br"
 author: Rodolfo Stangherlin

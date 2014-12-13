@@ -118,3 +118,7 @@ header .icon-bar {
 header .navbar-toggle {
     float: left;
 }
+
+img {
+    max-width: 100%;
+}
