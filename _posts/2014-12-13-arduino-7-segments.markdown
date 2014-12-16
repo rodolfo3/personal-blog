@@ -73,4 +73,6 @@ There is how it looks like in my breadboard:
 
 <img src="{{ "/2014-12-12-arduino-7-segments/2x7-segment-assembled-small.jpg" | prepend:site.staticurl }}" />
 
-Next step is encapsulate this in functions (or classes) and keep the complexity out of the rest of the project - and make it reusable.
+Next step is encapsulate this in functions (or classes) and keep the complexity out of the rest of the project - and make it reusable. You can see what I done in [the github repository][repo].
+
+[repo]: https://github.com/rodolfo3/SevSegmentsLib
