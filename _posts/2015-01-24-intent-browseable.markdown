@@ -5,7 +5,7 @@ date:   2015-01-24 00:00:00 -2
 categories: android
 ---
 
-If "Activities that can be safely invoked from a browser must support this category" [1], when it should be used other then URLs?
+If ["Activities that can be safely invoked from a browser must support this category"][browsable], when it should be used other then URLs?
 
 I have my own answer, testing this HTML:
 
@@ -24,6 +24,7 @@ The "$ adb shell dumpsys package" command shows google maps into "https:" and "h
 There also an [RFC][rfc5870] to describe the geo URI, with an [website][geouri] to support it.
 More information about call an Android Intent from the web web browser on [Chrome Developer Documentation][chrome-android-intents]. The geo URI launch the intent on Firefox, but I didn't testes start an specific activitity on it (like the chrome's sample).
 
+[browsable]: https://developer.android.com/reference/android/content/Intent.html#CATEGORY_BROWSABLE
 [google-maps-link]: https://www.google.com.br/maps/place/New+York,+NY,+USA
 [rfc5870]: http://www.ietf.org/rfc/rfc5870.txt
 [geouri]: http://geouri.org/
