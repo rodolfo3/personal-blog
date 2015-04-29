@@ -11,7 +11,7 @@ To this, I'll use Cloud Foundry to deploy a Python (using Flask) app to test the
 Cloud Foundry is an open source PaaS. It works more or less like [Heroku], but without locking in a provider.
 In their website, they have tutorials showing how to [deploy] on Amazon AWS and RedHat OpenStack - Bluemix supports it out-of-the-box.
 
-== Install the cf CLI tool ==
+## Install the cf CLI tool
 
 Cloud Foundry have a CLI tool written in ruby, but there is no Debian package for it.
 I use the same approach used for [jekyll], using environment vars:
@@ -43,7 +43,7 @@ $ cf target https://api.ng.bluemix.net
 $ cf login
 ```
 
-== The app ==
+## The app
 
 As made on Heroku, the Python version is selected on `runtime.txt` file.
 Python 2.7.9 is the default, but I prefer set if to avoid future problems with version updates.
@@ -89,7 +89,7 @@ The file should indicate the right [buildpack].
 This step is not mandatory, since the "push" command will make some questions interactivelly and create this file if it does not exists:
 
 ``` yaml
-pplications:
+applications:
 - name: hello-python
   memory: 128M
   instances: 1
